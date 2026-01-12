@@ -1,0 +1,12 @@
+use test
+use myapp
+docker ps
+mongodb: /*root:123@localhost:27017/admin 123*/ 0
+mongodb:root:123@localhost:27017/admin 123
+mongodb: /*root:123@localhost:27017/admin*/ 123
+show collections
+show dbs
+db.users.insertOne({ name : "Alice" })
+db.users.insetOne({ name : "Alice" })
+db.createCollection("users")
+use myapp
